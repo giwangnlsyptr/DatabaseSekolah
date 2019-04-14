@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.MainActivity"
+    android:gravity="center"
+    android:background="@android:color/white"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/etnamasekolah"
+        android:hint="NAMA SEKOLAH"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/tvnamasekolah"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/etalamat"
+        android:hint="ALAMAT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etnamasekolah"
+        android:layout_toRightOf="@id/tvalamat"
+        android:textSize="21sp" />
+    <EditText
+        android:id="@+id/etjmlsiswa"
+        android:hint="JUMLAH SISWA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etalamat"
+        android:layout_toRightOf="@id/tvjmlsiswa"
+        android:textSize="21sp" />
+
+    <EditText
+        android:id="@+id/etjmlguru"
+        android:hint="JUMLAH GURU"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etjmlsiswa"
+        android:layout_toRightOf="@id/tvjmlguru"
+        android:textSize="21sp" />
+
+    <Button
+        android:id="@+id/bsave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etjmlguru"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:text="Save" />
+
+    <Button
+        android:id="@+id/blihat"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bsave"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:text="lihat data" />
+
+
+</RelativeLayout>
